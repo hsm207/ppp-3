@@ -15,4 +15,5 @@ run-post-create-command: add-ppp-repo update-bashrc
 	sudo chown -R `whoami` $$HOME/.cabal && \
 	cabal update && \
 	sudo chown -R `whoami` /nix/store && \
+	git submodule update --init --recursive
 	git submodule foreach git pull origin main
