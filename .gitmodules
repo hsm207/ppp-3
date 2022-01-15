@@ -1,0 +1,6 @@
+[submodule "plutus-apps"]
+	path = plutus-apps
+	url = https://github.com/input-output-hk/plutus-apps.git
+[submodule "plutus-pioneer-program"]
+	path = plutus-pioneer-program
+	url = https://github.com/input-output-hk/plutus-pioneer-program.git
