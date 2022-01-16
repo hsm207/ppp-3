@@ -25,5 +25,5 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # install nix
-USER $USERNAME
-RUN ["/bin/bash", "-c", "bash <(curl -L https://nixos.org/nix/install) --no-daemon"]
+# USER $USERNAME
+# RUN ["/bin/bash", "-c", "bash <(curl -L https://nixos.org/nix/install) --no-daemon"]
