@@ -24,6 +24,4 @@ run-post-create-command: add-ppp-repo update-bashrc
 	# sudo chown -R `whoami` /nix && \
 	git submodule update --init --recursive
 	git submodule foreach git pull origin main
-
-run-post-start-command:
-	. /home/vscode/.nix-profile/etc/profile.d/nix.sh
+	
