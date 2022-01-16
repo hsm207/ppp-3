@@ -27,3 +27,6 @@ gtppp () {
 cpa() { 
     git --git-dir /workspaces/ppp-3/plutus-apps/.git checkout "$1" ; 
 }
+
+# load nix stuff
+. /home/vscode/.nix-profile/etc/profile.d/nix.sh

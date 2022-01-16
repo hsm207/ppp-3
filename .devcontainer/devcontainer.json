@@ -35,6 +35,6 @@
   "remoteUser": "vscode",
 
   // "postCreateCommand": "sudo chown -R `whoami` $HOME/.cabal && cabal update"
-  "postCreateCommand": "make run-post-create-command"
+  "postCreateCommand": "make run-post-create-command",
   
 }

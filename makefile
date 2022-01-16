@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 add-plutus-apps-repo:
 	if [ ! -d "plutus-apps" ]; then \
 		git submodule add https://github.com/input-output-hk/plutus-apps.git; \
@@ -22,3 +24,4 @@ run-post-create-command: add-ppp-repo update-bashrc
 	# sudo chown -R `whoami` /nix && \
 	git submodule update --init --recursive
 	git submodule foreach git pull origin main
+	
