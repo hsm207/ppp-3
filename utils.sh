@@ -28,5 +28,14 @@ cpa() {
     git --git-dir /workspaces/ppp-3/plutus-apps/.git checkout "$1" ; 
 }
 
+# get the week's plutus-apps.git tag
+gwpat() {
+    cat cabal.project | \
+    grep 'plutus-apps.git' -A 1 | \
+    grep tag | \
+    cut -d : -f 2 | \
+    tr -d '[:space:]'
+}
+
 # load nix stuff
 . /home/vscode/.nix-profile/etc/profile.d/nix.sh
